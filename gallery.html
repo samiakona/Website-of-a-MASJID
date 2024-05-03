@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale = 1.0">
+    <title> MASJID </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="gallery.html"> GALLERY </a></li>
+                    <li><a href="calender.html">CALENDER</a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+        <h1>Gallery</h1>
+    </section>
+
+    <!---------------------gallery -------------------->
+
+    <div class="full-img" id="FullImgBox">
+        <img src="gallery/1.jpg" id="FullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="gallery/1.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/2.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/3.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/4.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/5.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/6.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/7.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/8.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/9.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <!---------------------Footer -------------------->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p> The Mosque is considered to be the community center for Muslims. Better known in Arabic as a Masjid, the
+            mosque represents the nucleus of the Muslim family and community. </p>
+
+    </section>
+
+
+
+    <!---------------JavaScript for toggle Menu---------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        var FullImgBox = document.getElementById("FullImgBox");
+        var FullImg = document.getElementById("FullImg");
+
+        function openFullImg(pic) {
+            FullImgBox.style.display = "flex";
+            FullImg.src = pic;
+        }
+
+
+        function closeFullImg() {
+            FullImgBox.style.display = "none";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

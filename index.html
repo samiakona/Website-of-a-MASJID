@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with-device-width, initial-scale = 1.0">
+    <title> MASJID </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head">
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="gallery.html"> GALLERY </a></li>
+                    <li><a href="calender.html">CALENDER</a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+
+        <div class="text-box">
+            <h1>Famous Masjid in Mirpur</h1>
+            <p>A "mosque" can be defined as a place of worship for Muslims, who are followers of the Islamic faith.<br>
+                Mosque structures can be found all over the world and vary in size and function.<br> The primary focus
+                of a mosque, however, is for gathering to worship the Islamic faith.<br> Mosques are significant because
+                they have religious, historical, and cultural value and meaning for many people. <br>Islam is the
+                world's second largest religion with around 2 billion followers worldwide.</p>
+            <a onclick="location.href='https://www.hadithbd.com/quran/subjectwise/'" class="hero-btn">Know about the
+                Quran.</a>
+        </div>
+    </section>
+
+
+
+    <!---------------------Footer -------------------->
+    <section class="footer">
+        <h1>ABOUT US</h1>
+        <p>The Prophet Muhammad's original house in Medina (in present-day Saudi Arabia) is thought to be the first
+            mosque and<br> probably served as a model for early mosque architecture.It was a mud-brick structure with
+            living quarters on one side of an <br> enclosed rectangular courtyard. Since Muhammad's followers would
+            gather at his home for prayer, the side of the courtyard facing the qibla, <br> or the direction of prayer,
+            included a porch covered by palm branches, which offered shelter from the hot desert sun. Most early
+            mosques,<br> as well as the majority of later mosques in Arab lands, follow this general layout.</p>
+
+    </section>
+
+
+
+
+
+    <!---------------------Call To Action -------------------->
+
+    <section class="cta">
+        <h1>Description about the Masjid</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!---------------------Gallery-------------------->
+
+    <section class="glr">
+        <h1>Show the gallery</h1>
+        <a href="gallery.html" class="hero-btn">GALLERY</a>
+    </section>
+
+    <!---------------JavaScript for toggle Menu---------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-------------------Javascript for transletor------------------->
+
+
+
+</body>
+
+</html>
